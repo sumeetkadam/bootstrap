@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ECMA got ownership but still called as javascript and not  ECMAscript -->
+    <!-- <p>Enter Number</p> -->
+    <label for="no">Enter number</label>
+    <input type="number" id="no">
+    <input type="button" onclick="square()" value="square">
+    <input type="button" onclick="add()" value="add">
+    <script>
+        function square()
+        {
+           var ctrl = document.getElementById("no");
+           console.log(ctrl)
+           var no = ctrl.value;
+           var sqr = no*no;
+           alert("square is "+sqr);
+
+        }
+        function add()
+        {
+           var ctrl = document.getElementById("no");
+           console.log(ctrl)
+           var no = Number(ctrl.value);//type casting 
+           var add =  no+no; //var(To declare variable) const(can not change value) let(can not redeclare value,used to make coding strong) can be used
+           alert("addition is "+add);
+        }
+    </script>
+</body>
+</html>

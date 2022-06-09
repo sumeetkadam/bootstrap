@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="info()">click me to get array</button>
+    <button onclick="info1()">click me to add value</button>
+<script>
+    let array =['a','b','c','d'];
+    console.log(array);
+    console.log(array.toString());
+    console.log(array.join("/"));
+    function info()
+    {
+        alert(array);
+        alert(array.join("/"));
+
+    }
+    function info1()
+    {   
+        alert(array.push('e'));
+        alert(array.pop());
+        
+
+    }
+    
+    
+    
+</script>
+
+</body>
+</html>

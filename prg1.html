@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="no1">Enter number1</label>
+    <input type="number" id="no1">
+    <label for="no2">Enter number2</label>
+    <input type="number" id="no2">
+    <input type="button" onclick="add()" value="add">
+    <div id = "output"></div>
+<script>
+function add()
+{
+    let ctrl1 = document.getElementById("no1");//document is object of class Document
+    let ctrl2 = document.getElementById("no2");
+    var no1 = Number(ctrl1.value);//.value is must for input variables
+    var no2 = Number(ctrl2.value);//type casting 
+    var add =  no1+no2; //var() const(can not change value) let(can not redeclare value,used to make coding strong) can be used
+    // alert("addition is "+add);
+    document.getElementById("output").innerHTML= "<b>Addition is </b>"+add;//
+    // if .innerText is used in above it gives output along tag
+} 
+</script>
+    
+</body>
+</html>
